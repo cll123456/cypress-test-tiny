@@ -1,26 +1,20 @@
 {
-  "name": "cypress-test-tiny",
-  "version": "1.0.0",
-  "description": "Small project for quickly testing Cypress.io test runner",
+  "name": "try-cypress-init",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
-    "cypress:verify": "cypress verify",
-    "cypress:version": "cypress version",
-    "cypress:info": "cypress info",
-    "cypress:cache:list": "cypress cache list",
-    "list-videos": "ls -l cypress/videos",
-    "check-videos": "ok-file 'cypress/videos/*.mp4'",
-    "set-status": "set-status"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cy:open": "cypress open"
   },
-  "keywords": [],
-  "author": "Gleb Bahmutov <gleb@cypress.io>",
-  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
   "devDependencies": {
-    "ok-file": "1.5.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+    "@vitejs/plugin-vue": "^3.0.0",
+    "cypress": "^10.4.0",
+    "vite": "^3.0.0"
   }
 }
